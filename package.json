@@ -1,0 +1,33 @@
+{
+  "author": "Gucode <36kungfu@gmail.com>",
+  "description": "eTable",
+  "homepage": "https://github.com/36kungfu/e-table-backend#readme",
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "name": "e-table",
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/36kungfu/e-table-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/36kungfu/e-table-backend.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.329.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "knex": "^0.15.2",
+    "lodash": "^4.17.11",
+    "messaging-api-line": "^0.7.9",
+    "multer": "^1.4.0",
+    "multer-s3": "^2.7.0",
+    "pg": "^7.5.0"
+  }
+}
