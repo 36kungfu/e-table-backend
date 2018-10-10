@@ -12,19 +12,17 @@ const upload = require('./upload')
 
 const router = Express.Router()
 
-const apiPath = '/api/v1'
-
-router.use(apiPath + '/accountings', accountings)
-router.use(apiPath + '/companies', companies)
-router.use(apiPath + '/contacts', contacts)
-router.use(apiPath + '/install', install)
-router.use(apiPath + '/inventories', inventories)
-router.use(apiPath + '/line-messages', lineMessages)
-router.use(apiPath + '/line-users', lineUsers)
-router.use(apiPath + '/line-webhook', lineWebhook)
-router.use(apiPath + '/upload', upload)
+router.use('/accountings', accountings)
+router.use('/companies', companies)
+router.use('/contacts', contacts)
+router.use('/install', install)
+router.use('/inventories', inventories)
+router.use('/line-messages', lineMessages)
+router.use('/line-users', lineUsers)
+router.use('/line-webhook', lineWebhook)
+router.use('/upload', upload)
 router
-  .get('/api/version', (req, res) => {
+  .get('/version', (req, res) => {
     res.status(200).send('1.0')
   })
   .get('*', (req, res) => {
