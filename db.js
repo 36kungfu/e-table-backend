@@ -22,7 +22,7 @@ KnexQueryBuilder.prototype.selectPagination = function({
   }
   if (sort_ != null) {
     if (sort_ === 'created_at') {
-      this.orderBy(sort, direction)
+      this.orderBy(sort_, direction)
     } else {
       this.orderByRaw(sort_ + ' COLLATE "th_TH" ' + direction)
     }
