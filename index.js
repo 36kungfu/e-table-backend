@@ -14,7 +14,7 @@ const app = Express()
 // })
 app.use(
   cors({
-    exposedHeaders: 'Authorization'
+    exposedHeaders: 'x-total-count'
   })
 )
 app.use(BodyParser.json())
